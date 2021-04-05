@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>User List</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark navbar-expand">
+    <a class="navbar-brand">User List</a>
+    <ul class="navbar-nav" id="navbarNavDropdown">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" id="home-page">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <button class="btn btn-danger" href="#" id="favorite-page">My Favorites</button>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container mt-3">
+    <div class="row">
+      <form class="form-inline">
+        <input type="search" class="form-control mr-sm-2" placeholder="Find user(s)">
+        <button class="btn btn-primary my-2 my-sm-0">Search</button>
+      </form>
+    </div>
+  </div>
+<!-- Panel -->
+  <div class="container mt-4">
+    <div class="row d-flex justify-content-start flex-wrap" id="panel">
+      <!-- Render cards here. -->
+    </div>
+  </div>
+
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="user-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="exampleModalLabel"></h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body container">
+          <div class="row">
+            <div class="col-md-4">
+              <img class="rounded-lg" src="" alt="" id="modal-img">
+            </div>
+            <div class="col-md-8">
+              <p id="modal-name"></p>
+              <p id="modal-email"></p>
+              <p id="modal-gender"></p>
+              <p id="modal-age"></p>
+              <p id="modal-region"></p>
+              <p id="modal-birthday"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav aria-label="Page pagination">
+    <ul class="pagination justify-content-center" id="paginator"></ul>
+  </nav>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
